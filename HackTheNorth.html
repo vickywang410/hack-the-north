@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <title>Shopping Cart</title>
+    <script type="text/javascript" src="HackTheNorth.js"></script>
+        </head>
+    <style type="text/css">
+        
+    #block_product{
+    width:500px;
+    border:1px solid white;
+    padding: 10px;
+    background-color: #ccc ;
+    margin:100px auto;
+    }
+    #block_product img{
+    max-width:100%;
+    }
+    </style>
+    <body>
+        <div id="block_product">
+            <h3 id="cart">Your cart is empty $0</h3>
+            <div id="product">
+            <h3 class="Title"></h3>
+                <img src="https://assets.shop.loblaws.ca/products/20088361001/b1/en/front/20088361001_front_a04.png">
+                <div id="description">
+                    <p>
+                        Red Delicious apples have deep-red skin and crisp yellow flesh that can turn soft when cooked. They are best enjoyed fresh, so try snacking on Red Delicious apples with some peanut butter or add slices to a mixed green salad along with toasted walnuts.
+                    </p>
+                </div>
+                <p id="price" data_value="$1.76">Price: $1.76</p>
+                <button onclick="addcarts();">Add to Cart</button>
+            </div>
+            <script type="text/javascript">
+              
+                   var price=$("#price").attr("data_value");
+                   var i=0;
+            function addcarts(){
+                i++;
+                document.getElementById("cart").innerHTML="Your cart is "+i*price;
+                
+            }
+                
+            </script>
+        </div>
+        
+	</body>
+</html>
