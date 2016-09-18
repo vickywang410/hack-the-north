@@ -1,4 +1,5 @@
-	
+require('bootstrap')
+document.getElementById('sky').clientWidth;	
 String[] productNames = { "Prime Chicken Breasts, Boneless Skinless", "Kosher Salt", "Broccoli Stems","Olive Oil","Lemon Juice","Black Pepper","Brussells Sprouts","Celery Stalks","Hazelnuts","Parsley","Parmesan Cheese" };
 String[] ids={"20071473_KG","20124865_EA","20039812_EA", "20160496001_EA", "20081313_EA","20047211_EA","20036155001_KG","20163119001_EA","20895903002_EA","20139141001_EA","20347407002_EA"}
 String[] prices = { "12.408", "3.29", "3.99","5.49", "3.29","8.99","0.1977","1.99","3.49","1.49","7.49" };
